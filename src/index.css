@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-move-stripes: move-stripes 3s linear infinite;
+}
+
+@keyframes move-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
