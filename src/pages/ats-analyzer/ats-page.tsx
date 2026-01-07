@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Page from "../../components/template/page";
 import ATSWorkerContext from "../../data/contexts/ats-analyzer-context";
 import PDFUploader from "../../components/ats-analyzer/pdf-uploader";
@@ -15,6 +15,11 @@ export default function ATSPage() {
         if (!resumeFile) return;
         analyze({ resumeText: resumeFile, jobDescription: jobText });
     };
+
+    useEffect(() => {
+        document.title = "Transformer JS - ATS Analyzer";
+    }, []);
+
     return (
         <Page title="ATS Resume Analyzer">
             <div className="flex flex-col items-center justify-center bg-white rounded-2xl shadow-xl px-4 py-8 md:px-8 space-y-6">

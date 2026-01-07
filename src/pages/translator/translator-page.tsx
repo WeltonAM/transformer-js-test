@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Page from "../../components/template/page";
 import { useTranslator } from "../../data/hooks/use-translator";
 import LanguageSelector from "../../components/translator/LanguageSelector";
@@ -18,6 +18,10 @@ export default function TranslatorPage() {
             tgt_lang: targetLanguage,
         });
     };
+
+    useEffect(() => {
+        document.title = "Transformer JS - Translator";
+    }, []);
 
     return (
         <Page title="Transformer.js Translator">
