@@ -36,6 +36,7 @@ O desafio consistia em implementar uma funcionalidade usando algum modelo da lib
   - **pdfjs-dist** → conversão de PDF para texto
   - **react-toastify** → notificações
   - **lucide-react** → ícones
+  - **canvas-confetti** → confetidos
 
 ## 🧱 Estrutura do Projeto
 
@@ -52,6 +53,9 @@ src/
 │ │  ├─ ats-analyzer-context.tsx
 │ │  └─ translator-context.tsx
 │ └─ hooks/
+│    ├─ use-animated-percentage.ts
+│    ├─ use-ats-status.ts
+│    ├─ use-confetti.ts
 │    ├─ use-analyzer.ts
 │    ├─ use-toastify.ts
 │    └─ use-translator.ts
@@ -98,15 +102,16 @@ src/
 
 ## 🛠️ Tech Stack
 
-| Categoria          | Ferramentas/Conceitos         |
-| :----------------- | :---------------------------- |
-| **Frontend**       | React 19 · TypeScript · Vite  |
-| **Routing**        | React Router DOM 7            |
-| **Styling**        | TailwindCSS                   |
-| **Workers**        | Web Workers                   |
-| **PDF Processing** | pdfjs-dist                    |
-| **UI & Icons**     | React-Toastify · Lucide Icons |
-| **ML/AI**          | @huggingface/transformers     |
+| Categoria              | Ferramentas/Conceitos         |
+| :--------------------- | :---------------------------- |
+| **Frontend**           | React 19 · TypeScript · Vite  |
+| **Routing**            | React Router DOM 7            |
+| **Styling**            | TailwindCSS                   |
+| **Workers**            | Web Workers                   |
+| **PDF Processing**     | pdfjs-dist                    |
+| **UI & Icons**         | React-Toastify · Lucide Icons |
+| **UI/UX & Animations** | canvas-confetti               |
+| **ML/AI**              | @huggingface/transformers     |
 
 ## ⚙️ Como Rodar
 
